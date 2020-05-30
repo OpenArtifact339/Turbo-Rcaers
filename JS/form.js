@@ -8,11 +8,11 @@ class Form{
     display(){
 
       this.title.html("Turbo Racers");
-      this.title.position(130,0);  
+      this.title.position(displayWidth/2-50,0);  
       
-      this.input.position(130,160);
+      this.input.position(displayWidth/2-40,displayHeight/2-80);
       
-      this.button.position(250,200);
+      this.button.position(displayWidth/2+30,displayHeight/2);
       this.button.mousePressed(()=>{
           this.input.hide();
           this.button.hide();
@@ -23,7 +23,7 @@ class Form{
           player.updateCount(playerCount);
          
           this.greetings.html("Hello "+player.name);
-          this.greetings.position(130,160);
+          this.greetings.position(displayWidth/2-70,displayHeight/4);
           
       })
     }
